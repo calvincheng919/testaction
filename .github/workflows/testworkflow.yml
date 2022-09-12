@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: foo
-        uses: calvincheng919/actionCalvin@v1.0.2-alpha
+        uses: calvincheng919/actionCalvin@v1.0.0-beta
         with:
           who-to-greet: 'Mona the Octocat'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
