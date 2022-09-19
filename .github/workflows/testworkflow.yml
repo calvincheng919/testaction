@@ -22,9 +22,9 @@ jobs:
     name: Test my action
     steps:
       - uses: actions/checkout@v3
+      - run: npm install @actions/exec
       - name: Calvin JS Action Test
         uses: calvincheng919/calvin-js-action-template@v1.2
-        run: npm ci
         with:
           milliseconds: 1000
           # working-directory: 'test'
