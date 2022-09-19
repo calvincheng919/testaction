@@ -17,14 +17,13 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  test_action_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Test my action
     steps:
       - uses: actions/checkout@v3
-      - id: foo
-        uses: calvincheng919/actionCalvin@v1.0.1-beta
+      - name: Calvin JS Action Test
+        uses: calvincheng919/calvin-js-action-template@v1
         with:
-          who-to-greet: 'Mona the Octocat'
-      - run: echo random-number ${{ steps.foo.outputs.random-number }}
-        shell: bash
+          milliseconds: 1000
+          working-directory: 'test'
