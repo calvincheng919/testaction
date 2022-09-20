@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Calvin JS Action Test
-        uses: calvincheng919/calvin-js-action-template@v1.6.10
+        uses: calvincheng919/calvin-js-action-template@v1.6.11
         with:
           milliseconds: 1000
           # working-directory: './'
