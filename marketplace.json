@@ -1,0 +1,25 @@
+{
+  "label": "Covid-19",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/block-icons/covid_icon.png",
+    "tagline": "Explore Public COVID-19 Datasets."
+  },
+
+  "constants": {
+    "CONNECTION_NAME": {
+      "label": "Connection Name",
+      "value_constraint": "connection"
+    },
+    "MAPBOX_API_KEY": {
+      "label": "Mapbox API Key",
+      "value_constraint": "connection"
+    }
+  },
+  "models": [
+    {
+      "name": "covid_v2",
+      "connection_constant": "CONNECTION_NAME"
+    }
+  ]
+}
