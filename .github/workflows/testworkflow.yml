@@ -26,4 +26,4 @@ jobs:
         uses: calvincheng919/calvin-js-action-template@v1.5
         with:
           milliseconds: 1000
-          # working-directory: 'test'
+          working-directory: './'
