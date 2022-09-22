@@ -38,5 +38,5 @@ jobs:
         with:
           working-directory: json-tests
           name: JEST Tests                        # Name of the check run which will be created
-          path: reports/jest-junit.xml            # Path to test results           path: reports/jest-*.xml    
+          path: junit.xml            # Path to test results           path: reports/jest-*.xml    
           reporter: jest-junit                    # Format of test results
