@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: JS Automation Tests
-        uses: calvincheng919/calvin-js-action-template@v2.2.3
+        uses: calvincheng919/calvin-js-action-template@v2.2.4
       - name: Test Report
         uses: dorny/test-reporter@v1
         if: success() || failure()                # run this step even if previous step failed
