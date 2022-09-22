@@ -1,4 +1,4 @@
-# name: My Test Action
+name: My Test Action
 
 # on:
 #   push:
@@ -19,17 +19,15 @@ on: [push]
 jobs:
   test_action_job:
     runs-on: ubuntu-latest
-    name: Test my action
+    name: Looker Marketplace JSON Tests
     steps:
       - uses: actions/checkout@v3
-      - name: Calvin JS Action Test
-        uses: calvincheng919/calvin-js-action-template@v2.2.2
-        with:
-          milliseconds: 1000
+      - name: JS Automation Tests
+        uses: calvincheng919/calvin-js-action-template@v2.2.3
       - name: Test Report
         uses: dorny/test-reporter@v1
-        if: success() || failure()    # run this step even if previous step failed
+        if: success() || failure()                # run this step even if previous step failed
         with:
-          name: JEST Tests            # Name of the check run which will be created
+          name: JEST Tests                        # Name of the check run which will be created
           path: reports/jest-junit.xml            # Path to test results           path: reports/jest-*.xml    
-          reporter: jest-junit        # Format of test results
+          reporter: jest-junit                    # Format of test results
