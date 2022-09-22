@@ -31,9 +31,7 @@ jobs:
           repository: calvincheng919/calvin-js-action-template
           path: json-tests
       - name: Run Action
-        uses: calvincheng919/calvin-js-action-template@v3.1.5
-        with: 
-          working-directory: ./json-tests
+        uses: calvincheng919/calvin-js-action-template@v3.1.6
       - name: Test Report
         uses: dorny/test-reporter@v1
         if: success() || failure()                # run this step even if previous step failed
