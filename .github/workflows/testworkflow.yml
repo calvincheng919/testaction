@@ -22,13 +22,15 @@ jobs:
     name: Looker Marketplace JSON Tests
     steps:
       - name: Checkout Target Repo (Looker)
+        with:
+          path: main
         uses: actions/checkout@v3
       - name: Checkout Action Repo
         uses: actions/checkout@v3
         with:
           repository: calvincheng919/calvin-js-action-template
       - name: Run Action
-        uses: calvincheng919/calvin-js-action-template@v3.1.1
+        uses: calvincheng919/calvin-js-action-template@v3.1.2
       - name: Test Report
         uses: dorny/test-reporter@v1
         if: success() || failure()                # run this step even if previous step failed
