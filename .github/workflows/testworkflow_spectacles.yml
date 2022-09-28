@@ -36,7 +36,9 @@ jobs:
       - run: pip install spectacles
       - name: Run Spectacles Test Action
         env:   
-          LOOKER_BASE_URL: https://4mile.looker.com
+          LOOKER_BASE_URL: ${{secrets.LOOKER_BASE_URL}}
+          LOOKER_CLIENT_ID: ${{secrets.LOOKER_CLIENT_ID}}
+          LOOKER_CLIENT_SECRET: ${{secrets.LOOKER_CLIENT_SECRET}}
         uses: 4mile/looker-marketplace-blocks-test@v1.0.4
       # - name: Test Report
       #   uses: dorny/test-reporter@v1
