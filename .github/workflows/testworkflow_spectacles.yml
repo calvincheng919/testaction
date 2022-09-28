@@ -37,7 +37,7 @@ jobs:
       - name: Run Spectacles Test Action
         env:   
           LOOKER_BASE_URL: ${{secrets.LOOKER_BASE_URL}}
-        uses: 4mile/looker-marketplace-blocks-test@v1.0.3
+        uses: 4mile/looker-marketplace-blocks-test@v1.0.4
       # - name: Test Report
       #   uses: dorny/test-reporter@v1
       #   if: success() || failure()                # run this step even if previous step failed
