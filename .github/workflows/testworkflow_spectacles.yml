@@ -35,7 +35,7 @@ jobs:
           python-version: '3.10.4'
       - run: pip install spectacles
       - name: Run Spectacles Test Action
-        uses: 4mile/looker-marketplace-blocks-test@v1.0.2
+        uses: 4mile/looker-marketplace-blocks-test@v1.0.3
       # - name: Test Report
       #   uses: dorny/test-reporter@v1
       #   if: success() || failure()                # run this step even if previous step failed
