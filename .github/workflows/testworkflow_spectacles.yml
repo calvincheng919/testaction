@@ -39,7 +39,7 @@ jobs:
           LOOKER_BASE_URL: ${{secrets.LOOKER_BASE_URL}}
           LOOKER_CLIENT_ID: ${{secrets.LOOKER_CLIENT_ID}}
           LOOKER_CLIENT_SECRET: ${{secrets.LOOKER_CLIENT_SECRET}}
-        uses: 4mile/looker-marketplace-blocks-test@v1.0.4
+        uses: 4mile/looker-marketplace-blocks-test@v1.1.0
       # - name: Test Report
       #   uses: dorny/test-reporter@v1
       #   if: success() || failure()                # run this step even if previous step failed
